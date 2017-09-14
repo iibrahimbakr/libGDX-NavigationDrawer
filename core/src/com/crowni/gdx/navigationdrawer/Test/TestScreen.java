@@ -34,7 +34,7 @@ public class TestScreen extends BaseScreen {
         final Image icon_share = new Image(atlas.findRegion("icon_share"));
         final Image icon_music = new Image(atlas.findRegion("icon_music"));
         final Image icon_off_music = new Image(atlas.findRegion("icon_off_music"));
-        final Image image_background = new Image(com.crowni.gdx.navigationdrawer.utils.Utils.getTintedDrawable(atlas.findRegion("image_background"), Color.BLACK));
+        final Image image_background = new Image(Utils.getTintedDrawable(atlas.findRegion("image_background"), Color.BLACK));
         final Image button_menu = new Image(atlas.findRegion("button_menu"));
 
         // initialize NavigationDrawer
@@ -115,7 +115,7 @@ public class TestScreen extends BaseScreen {
             }
         };
 
-        com.crowni.gdx.navigationdrawer.utils.Utils.addListeners(listener, icon_rate, icon_share, icon_music, icon_off_music, button_menu, image_background);
+       Utils.addListeners(listener, icon_rate, icon_share, icon_music, icon_off_music, button_menu, image_background);
     }
 
 }
