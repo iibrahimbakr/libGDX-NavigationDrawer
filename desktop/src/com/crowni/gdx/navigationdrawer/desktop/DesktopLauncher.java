@@ -2,7 +2,7 @@ package com.crowni.gdx.navigationdrawer.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.crowni.gdx.navigationdrawer.Begin;
+import com.crowni.gdx.navigationdrawer.Test.Begin;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

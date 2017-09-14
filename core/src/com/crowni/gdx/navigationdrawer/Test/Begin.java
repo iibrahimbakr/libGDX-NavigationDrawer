@@ -13,10 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  ******************************************************************************/
-package com.crowni.gdx.navigationdrawer;
+package com.crowni.gdx.navigationdrawer.Test;
 
 import com.badlogic.gdx.Game;
-import com.crowni.gdx.navigationdrawer.Example.ExampleTest;
 
 /**
  * @author Crowni
@@ -25,7 +24,7 @@ public class Begin extends Game {
 
     @Override
     public void create() {
-        setScreen(new ExampleTest());
+        setScreen(new TestScreen());
     }
 
     @Override

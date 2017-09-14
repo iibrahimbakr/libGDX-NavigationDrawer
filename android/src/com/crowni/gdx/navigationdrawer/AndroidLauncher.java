@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
+import com.crowni.gdx.navigationdrawer.Test.Begin;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override

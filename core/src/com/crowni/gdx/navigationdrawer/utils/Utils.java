@@ -1,4 +1,4 @@
-package com.crowni.gdx.navigationdrawer.Example;
+package com.crowni.gdx.navigationdrawer.utils;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Sprite;

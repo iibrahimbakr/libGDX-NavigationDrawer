@@ -1,4 +1,4 @@
-package com.crowni.gdx.navigationdrawer.Example;
+package com.crowni.gdx.navigationdrawer.Test;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -9,14 +9,14 @@ import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
-import com.crowni.gdx.navigationdrawer.BaseScreen;
+import com.crowni.gdx.navigationdrawer.utils.*;
 import com.crowni.gdx.navigationdrawer.NavigationDrawer;
 
 /**
  * Created by Crowni on 9/14/2017.
  **/
-public class ExampleTest extends BaseScreen {
-    private static final String TAG = ExampleTest.class.getSimpleName();
+public class TestScreen extends BaseScreen {
+    private static final String TAG = TestScreen.class.getSimpleName();
 
     private static final float NAV_WIDTH = 200F;
     private static final float NAV_HEIGHT = 1920F;
@@ -34,7 +34,7 @@ public class ExampleTest extends BaseScreen {
         final Image icon_share = new Image(atlas.findRegion("icon_share"));
         final Image icon_music = new Image(atlas.findRegion("icon_music"));
         final Image icon_off_music = new Image(atlas.findRegion("icon_off_music"));
-        final Image image_background = new Image(Utils.getTintedDrawable(atlas.findRegion("image_background"), Color.BLACK));
+        final Image image_background = new Image(com.crowni.gdx.navigationdrawer.utils.Utils.getTintedDrawable(atlas.findRegion("image_background"), Color.BLACK));
         final Image button_menu = new Image(atlas.findRegion("button_menu"));
 
         // initialize NavigationDrawer
@@ -115,7 +115,7 @@ public class ExampleTest extends BaseScreen {
             }
         };
 
-        Utils.addListeners(listener, icon_rate, icon_share, icon_music, icon_off_music, button_menu, image_background);
+        com.crowni.gdx.navigationdrawer.utils.Utils.addListeners(listener, icon_rate, icon_share, icon_music, icon_off_music, button_menu, image_background);
     }
 
 }
